@@ -1,104 +1,55 @@
 # 🛒 VendorConnect
 
 <p align="center">
+  <h3 align="center">Smart Platform Connecting Street Vendors with Nearby Customers</h3>
 
-### Smart Platform Connecting Street Vendors with Nearby Customers
-
-A modern full-stack web application that helps customers discover nearby street vendors, browse their products, and place orders seamlessly while enabling vendors to manage their business digitally.
-
----
-
-## 📌 Problem Statement
-
-Street vendors often struggle to reach customers due to the lack of digital visibility. Customers also find it difficult to locate nearby vendors selling the products they need.
-
-VendorConnect bridges this gap by providing a location-based platform where customers can easily discover nearby vendors and vendors can expand their reach through a digital storefront.
+  <p align="center">
+    A responsive React web application that helps customers discover nearby street vendors through an intuitive and user-friendly interface.
+  </p>
+</p>
 
 ---
 
-# 🚀 Features
+## 📖 Project Overview
 
-### 👤 Customer
+VendorConnect is a frontend web application developed to digitally connect street vendors with customers. The platform provides an easy way for users to discover nearby vendors, explore available products, and improve the visibility of local businesses.
 
-- User Registration & Login
-- JWT Authentication
-- Browse Nearby Vendors
-- Interactive Map View
-- Search Vendors
-- View Vendor Profiles
-- Browse Products
-- Add to Cart
-- Place Orders
-- View Order History
-- Favorite Vendors
-- Responsive UI
+This project was developed as part of a real-world problem-solving initiative to promote digital inclusion for street vendors and enhance customer convenience.
 
 ---
 
-### 🏪 Vendor
+## 🎯 Problem Statement
 
-- Vendor Login
-- Vendor Dashboard
-- Manage Products
-- Accept Orders
-- Track Customer Orders
-- View Sales Overview
-- Manage Availability
+Street vendors play an important role in local economies but often struggle with limited digital visibility. Customers also find it difficult to locate nearby vendors selling the products they need.
+
+VendorConnect addresses this challenge by providing a modern web interface where customers can easily browse vendors and explore their offerings.
 
 ---
 
-## 🛠 Tech Stack
+# ✨ Features
 
-### Frontend
-
-- Next.js
-- React.js
-- Tailwind CSS
-- Leaflet
-- OpenStreetMap
-- Axios
-
-### Backend
-
-- Node.js
-- Express.js
-
-### Database
-
-- MongoDB
-- Mongoose
-
-### Authentication
-
-- JWT
-- bcrypt
-
-### Tools
-
-- Git
-- GitHub
-- VS Code
-- Postman
+- 🏪 Browse nearby street vendors
+- 🔍 Search vendors
+- 📱 Fully responsive interface
+- ⚡ Fast loading with Vite
+- 🎨 Clean and modern UI
+- ♻️ Reusable React components
+- 📍 Vendor discovery interface
+- 🛍 Product browsing
+- 📲 Mobile-friendly design
 
 ---
 
-# 🏗 System Architecture
+# 🛠 Tech Stack
 
-```
-                   Customer
-                       │
-                Next.js Frontend
-                       │
-                REST API Requests
-                       │
-              Express.js Backend
-                       │
-      JWT Authentication Middleware
-                       │
-                  MongoDB Atlas
-                       │
-          Vendor & Customer Database
-```
+| Category | Technology |
+|-----------|------------|
+| Frontend | React.js |
+| Build Tool | Vite |
+| Language | JavaScript (ES6+) |
+| Styling | CSS3 |
+| Package Manager | npm |
+| Version Control | Git & GitHub |
 
 ---
 
@@ -107,79 +58,54 @@ VendorConnect bridges this gap by providing a location-based platform where cust
 ```
 VendorConnect
 │
-├── frontend
-│   ├── app
-│   ├── components
-│   ├── public
-│   └── styles
+├── public/
 │
-├── backend
-│   ├── controllers
-│   ├── middleware
-│   ├── models
-│   ├── routes
-│   ├── config
-│   └── server.js
+├── src/
+│   ├── assets/
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.jsx
 │
-├── assets
-│
-├── README.md
-└── package.json
+├── .gitignore
+├── index.html
+├── package.json
+├── package-lock.json
+├── vite.config.js
+├── eslint.config.js
+└── README.md
 ```
 
 ---
 
-# 📸 Screenshots
-
-> Add screenshots inside the **assets/** folder.
-
-Example:
+# 🏗 Architecture
 
 ```
-assets/
-
-home.png
-
-login.png
-
-dashboard.png
-
-vendor-list.png
-
-map-view.png
-
-cart.png
-
-orders.png
-```
-
-Then display them like
-
-```markdown
-## Home Page
-
-![Home](assets/home.png)
-
-## Vendor List
-
-![Vendor List](assets/vendor-list.png)
-
-## Map View
-
-![Map](assets/map-view.png)
+             User
+               │
+               ▼
+      React Frontend (Vite)
+               │
+               ▼
+      Reusable UI Components
+               │
+               ▼
+      Responsive User Interface
 ```
 
 ---
 
-# ⚙ Installation
+# 🚀 Getting Started
 
-## Clone Repository
+## 1️⃣ Clone the Repository
 
 ```bash
 git clone https://github.com/Pratikshadk12/vendorconnect.git
 ```
 
-Move inside the folder
+---
+
+## 2️⃣ Navigate to the Project Folder
 
 ```bash
 cd vendorconnect
@@ -187,41 +113,15 @@ cd vendorconnect
 
 ---
 
-## Install Frontend
+## 3️⃣ Install Dependencies
 
 ```bash
-cd frontend
-
 npm install
 ```
 
 ---
 
-## Install Backend
-
-```bash
-cd backend
-
-npm install
-```
-
----
-
-## Configure Environment Variables
-
-Create a `.env` file inside backend.
-
-```env
-PORT=5000
-
-MONGODB_URI=your_mongodb_connection
-
-JWT_SECRET=your_secret
-```
-
----
-
-## Run Backend
+## 4️⃣ Start the Development Server
 
 ```bash
 npm run dev
@@ -229,101 +129,86 @@ npm run dev
 
 ---
 
-## Run Frontend
-
-```bash
-npm run dev
-```
-
-Open
+## 5️⃣ Open in Browser
 
 ```
-http://localhost:3000
+http://localhost:5173
 ```
 
 ---
 
-# 📡 API Overview
+# 📚 Learning Outcomes
 
-## Authentication
+This project helped me strengthen my understanding of:
 
-```
-POST /api/auth/register
-
-POST /api/auth/login
-```
-
----
-
-## Vendors
-
-```
-GET /api/vendors
-
-GET /api/vendors/:id
-```
+- React Fundamentals
+- Component-Based Architecture
+- Responsive Web Design
+- CSS Styling
+- Project Structuring
+- Modern JavaScript (ES6+)
+- Git & GitHub Workflow
+- Frontend Development using Vite
 
 ---
 
-## Orders
+# 🚀 Future Scope
 
-```
-POST /api/orders
-
-GET /api/orders
-```
-
----
-
-## Customers
-
-```
-GET /api/customers/profile
-```
-
----
-
-# 🧠 Challenges Faced
-
-- Designing scalable backend APIs
-- Implementing secure JWT authentication
-- Integrating interactive maps
-- Managing customer and vendor workflows
-- Handling order management efficiently
-- Building a responsive UI across devices
+- User Authentication
+- Vendor Login
+- Customer Dashboard
+- Vendor Dashboard
+- Shopping Cart
+- Online Payments
+- Google Maps Integration
+- Live Vendor Tracking
+- AI-Based Vendor Recommendations
+- Push Notifications
+- Order Tracking
+- Reviews & Ratings
+- Wishlist
+- Multi-language Support
+- Dark Mode
 
 ---
 
-# 🌟 Future Scope
+# 💡 Project Highlights
 
-- Live vendor tracking
-- Online payment integration
-- Push notifications
-- AI-based vendor recommendations
-- Voice search
-- Multi-language support
-- Analytics Dashboard
-- Rating & Review System
-- Inventory Management
-- Delivery Partner Integration
+- Modern React Application
+- Responsive UI Design
+- Fast Development using Vite
+- Clean Folder Structure
+- Reusable Components
+- Beginner-Friendly Codebase
+- Easy to Extend
+- Real-World Problem Statement
 
 ---
 
-# 📈 Project Highlights
+# 🤝 Contributing
 
-✅ Full Stack Development
+Contributions are welcome!
 
-✅ REST APIs
+1. Fork the repository
+2. Create a new feature branch
 
-✅ Authentication
+```
+git checkout -b feature-name
+```
 
-✅ MongoDB Database Design
+3. Commit your changes
 
-✅ Responsive UI
+```
+git commit -m "Add new feature"
+```
 
-✅ Interactive Maps
+4. Push the branch
 
-✅ Location-Based Search
+```
+git push origin feature-name
+```
+
+5. Create a Pull Request
 
 ---
 
@@ -331,28 +216,31 @@ GET /api/customers/profile
 
 **Pratiksha D K**
 
-B.Tech (Artificial Intelligence & Machine Learning)
+🎓 B.Tech – Artificial Intelligence & Machine Learning
 
-REVA University
+🏫 REVA University
 
-GitHub: https://github.com/Pratikshadk12
+📍 Bengaluru, India
 
-LinkedIn: https://www.linkedin.com/in/pratiksha-d-korishettar
+**GitHub**
+
+https://github.com/Pratikshadk12
+
+**LinkedIn**
+
+https://www.linkedin.com/in/pratiksha-d-korishettar
 
 ---
+
 
 # ⭐ Support
 
-If you found this project useful,
+If you found this project useful:
 
 ⭐ Star this repository
 
-🍴 Fork it
+🍴 Fork this repository
 
-📢 Share it
+📢 Share it with others
 
----
-
-## 📄 License
-
-This project is licensed under the MIT License.
+Thank you for visiting my project! 😊
